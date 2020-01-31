@@ -76,6 +76,10 @@
     @include desktop {
       font-size: 70px;
     }
+
+    @include mobile {
+      font-size: 40px;
+    }
   }
 
   &__text {

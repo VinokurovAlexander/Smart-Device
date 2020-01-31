@@ -3,18 +3,27 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
+  @include mobile {
+    flex-direction: column;
+    justify-content: center;
+  }
+
   &__item {
     box-sizing: border-box;
-    width: 570px;
+    width: 49%;
     padding: 42px 45px 67px;
     margin-bottom: 29px;
 
     box-shadow: -3px 0 0 0 $color-main;
-    transition: background-color $transition-time $transition-function;
+    border: 1px solid #E5E5E5;
+    transition:
+      background-color $transition-time $transition-function,
+      border-color $transition-time $transition-function;
 
     &:hover {
       background-color: $color-main;
       cursor: pointer;
+      border-color: $color-main;
 
       .features-list__text {
         color: $color-text-attention;
@@ -25,7 +34,19 @@
           fill: $color-secondary;
         }
       }
+    }
 
+    @include desktop {
+      width: 48%;
+    }
+
+    @include tablet {
+      padding: 25px 28px 24px;
+      padding-right: 18px;
+    }
+
+    @include mobile {
+      width: 100%;
     }
   }
 
@@ -42,10 +63,20 @@
     &--title {
       margin-bottom: 15px;
 
+      font-family: $font-main;
       font-size: 24px;
       line-height: 34px;
       font-weight: 400;
       color: $color-main;
+
+      @include tablet {
+        margin-bottom: 8px;
+      }
+
+      @include mobile {
+        font-size: 20px;
+        line-height: 28px;
+      }
     }
   }
 
@@ -55,6 +86,10 @@
     path {
       fill: $color-main;
       transition: fill $transition-time $transition-function;
+    }
+
+    @include tablet {
+      margin-bottom: 4px;
     }
   }
 }
