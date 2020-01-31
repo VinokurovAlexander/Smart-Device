@@ -1,10 +1,12 @@
 .btn {
+  display: block;
+
+  box-sizing: border-box;
   padding: 12px 19px;
 
   font-size: 14px;
-  text-transform: uppercase;
-
   font-weight: bold;
+  text-transform: uppercase;
   text-align: center;
 
   background-color: transparent;
@@ -25,7 +27,7 @@
   }
 
   &--big {
-    max-width: 410px;
+    max-width: 405px;
     padding: 17px 28px;
 
     font-size: 16px;

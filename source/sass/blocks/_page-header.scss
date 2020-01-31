@@ -4,25 +4,65 @@
 
   background-color: $color-bg-main;
   background-repeat: no-repeat;
-  background-image:
-      url('../img/header-bg-mask-desktop@1x.png'),
-      url('../img/boards-desktop@1x.png');
-  background-position:
-      center,
-      right 13% top 65%;
+  background-image: url('../img/header-bg-mask-desktop@1x.png');
+  background-position: center;
+
   color: $color-text-attention;
 
-  &__container {
-    width: 1420px;
-    margin: 0 auto;
-  }
+  //&__container {
+  //  max-width: 1420px;
+  //  margin: 0 auto;
+  //
+  //  @include desktop {
+  //    padding: 0 25px;
+  //  }
+  //}
 
-  &__nav {
-    margin-bottom: 230px;
-  }
+  //&__content {
+  //  max-width: 1920px;
+  //  padding-top: 230px;
+  //
+  //  background-repeat: no-repeat;
+  //  background-image:
+  //    url('../img/boards-desktop@1x.png'),
+  //    url('../img/triangles-desktop@1x.png');
+  //  background-position:
+  //    right 13% top 72%,
+  //    right 100% top 54%;;
+  //}
+
+  //&__content-wrapper {
+  //  width: 55%;
+  //}
+
+
+
+  //&__bg {
+  //  width: 1920px;
+  //
+  //  background-repeat: no-repeat;
+  //  background-image:
+  //      url('../img/boards-desktop@1x.png'),
+  //      url('../img/triangles-desktop@1x.png');
+  //  background-position:
+  //      right 13% top 72%,
+  //      right 100% top 54%;;
+  //}
 
   &__content {
+    padding-top: 230px;
+  }
+
+  &__content-wrapper {
     width: 55%;
+
+    @include desktop {
+      width: 48%;
+    }
+  }
+
+  &__text-wrapper {
+    padding-left: 108px;
   }
 
   &__title {
@@ -32,21 +72,26 @@
     font-size: 80px;
     font-weight: bold;
     text-transform: uppercase;
-  }
 
-  &__wrapper {
-    padding-left: 108px;
+    @include desktop {
+      font-size: 70px;
+    }
   }
 
   &__text {
     position: relative;
 
     margin: 0;
-    margin-bottom: 62px;
+    margin-bottom: 44px;
 
     font-family: $font-attention;
     font-size: 22px;
     line-height: 34px;
+
+    @include desktop {
+      font-size: 20px;
+      line-height: 30px;
+    }
 
     &::before {
       content: '';

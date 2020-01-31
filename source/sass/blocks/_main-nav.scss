@@ -10,6 +10,10 @@
   &__logo-link {
     width: 14%;
     padding-left: 11px;
+
+    @include desktop {
+      width: 21%;
+    }
   }
 
   &__btn {
