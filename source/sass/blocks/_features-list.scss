@@ -6,7 +6,7 @@
   &__item {
     box-sizing: border-box;
     width: 570px;
-    padding: 97px 45px 67px;
+    padding: 42px 45px 67px;
     margin-bottom: 29px;
 
     box-shadow: -3px 0 0 0 $color-main;
@@ -50,6 +50,8 @@
   }
 
   &__icon {
+    margin-bottom: 15px;
+
     path {
       fill: $color-main;
       transition: fill $transition-time $transition-function;
