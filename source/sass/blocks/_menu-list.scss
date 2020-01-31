@@ -1,0 +1,39 @@
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+
+  font-family: $font-attention;
+
+  &__item {
+    max-width: 210px;
+    margin-left: 86px;
+    padding-left: 42px;
+
+    background-repeat: no-repeat;
+    background-position: left center;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &--mail {
+      background-image: url('../img/icon-mail.svg')
+    }
+
+    &--phone {
+      padding-left: 32px;
+      background-image: url('../img/icon-phone-call.svg')
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+}

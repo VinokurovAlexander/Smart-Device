@@ -1,0 +1,19 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+
+  &__list {
+    margin-left: auto;
+    padding-left: 3px;
+  }
+
+  &__logo-link {
+    width: 14%;
+    padding-left: 11px;
+  }
+
+  &__btn {
+    max-width: 200px;
+    margin-left: 52px;
+  }
+}

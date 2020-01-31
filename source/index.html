@@ -8,5 +8,41 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+
+  <div style="display: none">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+
+  <header class="page-header">
+    <div class="page-header__container">
+      <nav class="page-header__nav main-nav">
+        <a class="main-nav__logo-link logo-link link">
+          <svg class="logo-link__img" width="52" height="52">
+            <use xlink:href="#icon-smart-device"></use>
+          </svg>
+          <div class="logo-link__text-wrapper">
+            <p class="logo-link__text logo-link__text--title">Smart Device</p>
+            <p class="logo-link__text logo-link__text--content">Умные технологии</p>
+          </div>
+        </a>
+        <ul class="main-nav__list menu-list">
+          <li class="menu-list__item menu-list__item--mail">
+            <a class="menu-list__link link" href="mailto:info@sd.ru">info@sd.ru</a>
+          </li>
+          <li class="menu-list__item menu-list__item--phone">
+            <a class="menu-list__link link" href="tel:+7(495)0005252">+7 (495) 000 52 52</a>
+          </li>
+        </ul>
+        <button class="main-nav__btn btn">Заказать звонок</button>
+      </nav>
+      <div class="page-header__content">
+        <h1 class="page-header__title">Печатные платы</h1>
+        <div class="page-header__wrapper">
+          <p class="page-header__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+          <a class="page-header__link link btn btn--secondary btn--big" href="#">Получить бесплатную консультацию</a>
+        </div>
+      </div>
+    </div>
+  </header>
 </body>
 </html>

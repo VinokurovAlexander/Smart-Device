@@ -6,17 +6,23 @@ $width-fullhd: 1920px;
 //colors
 $color-bg-main: #1B2D37;
 $color-main: #00B2FF;
+$color-secondary: #FFFFFF;
 $color-text-attention: #FFFFFF;
 $color-text-content: #666666;
 $color-text-main: #1B2D37;
 $color-text-secondary: #788891;
 
 //fonts
-$font-main: 'Roboto Condensed', 'Arial' sans-serif;
+$font-main: 'Roboto Condensed', 'Arial', sans-serif;
 $font-attention: 'PT Mono', 'Consolas', monospace;
-$font-secondary: 'Roboto', 'Arial' sans-serif;
+$font-secondary: 'Roboto', 'Arial', sans-serif;
 
 //other
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
+
+//styleguide
+$opacity-hover: 0.5;
+$transition-time: 0.3s;
+$transition-function: ease;
 

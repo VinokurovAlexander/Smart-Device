@@ -1,0 +1,33 @@
+.btn {
+  padding: 12px 19px;
+
+  font-size: 14px;
+  text-transform: uppercase;
+
+  font-weight: bold;
+  text-align: center;
+
+  background-color: transparent;
+  border: 1px solid $color-text-attention;
+  border-radius: 5px;
+  color: $color-text-attention;
+
+  transition: opacity $transition-time $transition-function;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+
+  &--secondary {
+    background-color: $color-main;
+    border-color: $color-main;
+  }
+
+  &--big {
+    max-width: 410px;
+    padding: 17px 28px;
+
+    font-size: 16px;
+  }
+}
