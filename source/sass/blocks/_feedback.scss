@@ -5,9 +5,18 @@
   color: $color-text-attention;
   background-color: $color-main;
 
+  @include tablet {
+    padding-top: 80px;
+    padding-bottom: 106px;
+  }
+
   &__title {
     margin: 0;
     margin-bottom: 10px;
+
+    @include tablet {
+      margin-bottom: 17px;
+    }
   }
 
   &__content {
@@ -15,10 +24,24 @@
     width: 49%;
     margin-left: auto;
     padding-left: 11px;
+
+    @include desktop {
+      width: 54%;
+    }
+
+    @include tablet {
+      width: 82%;
+      margin: 0 auto;
+      padding-left: 0;
+    }
   }
 
   &__text {
     margin: 0;
     margin-bottom: 49px;
+
+    @include tablet {
+      margin-bottom: 54px;
+    }
   }
 }
