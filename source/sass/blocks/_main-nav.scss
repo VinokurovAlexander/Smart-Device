@@ -15,10 +15,19 @@
     @include desktop {
       width: 21%;
     }
+
+    @include tablet {
+      width: 29%;
+      padding-left: 0;
+    }
   }
 
   &__btn {
     max-width: 200px;
     margin-left: 52px;
+
+    @include tablet {
+      display: none;
+    }
   }
 }

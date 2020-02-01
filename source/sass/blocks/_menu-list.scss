@@ -23,17 +23,33 @@
     }
 
     &--mail {
-      background-image: url('../img/icon-mail.svg')
+      background-image: url('../img/icon-mail.svg');
     }
 
     &--phone {
       padding-left: 32px;
-      background-image: url('../img/icon-phone-call.svg')
+      background-image: url('../img/icon-phone-call.svg');
+    }
+
+    @include tablet {
+      width: 24px;
+      height: 24px;
+      padding: 0;
+      margin-left: 32px;
+
+      background-position: center;
+      background-size: contain;
     }
   }
 
   &__link {
     display: flex;
     align-items: center;
+  }
+
+  &__link-text {
+    @include tablet {
+      @include visually-hidden;
+    }
   }
 }

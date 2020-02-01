@@ -9,6 +9,11 @@
 
   color: $color-text-attention;
 
+  @include tablet {
+    min-height: 666px;
+    padding-top: 20px;
+  }
+
   //&__container {
   //  max-width: 1420px;
   //  margin: 0 auto;
@@ -51,18 +56,35 @@
 
   &__content {
     padding-top: 230px;
+
+    @include desktop {
+      padding-top: 155px;
+    }
+
+    @include tablet {
+      padding-top: 116px;
+    }
   }
 
   &__content-wrapper {
     width: 55%;
 
     @include desktop {
-      width: 48%;
+      width: 50%;
+    }
+
+    @include tablet {
+      width: 60%;
+      margin-left: 64px;
     }
   }
 
   &__text-wrapper {
     padding-left: 108px;
+
+    @include tablet {
+      padding-left: 52px;
+    }
   }
 
   &__title {
@@ -72,9 +94,14 @@
     font-size: 80px;
     font-weight: bold;
     text-transform: uppercase;
+    letter-spacing: 0.07em;
 
     @include desktop {
       font-size: 70px;
+    }
+
+    @include tablet {
+      font-size: 60px;
     }
 
     @include mobile {
@@ -97,6 +124,13 @@
       line-height: 30px;
     }
 
+    @include tablet {
+      margin-bottom: 55px;
+
+      font-size: 18px;
+      line-height: 28px;
+    }
+
     &::before {
       content: '';
       position: absolute;
@@ -107,6 +141,13 @@
       height: 2px;
 
       background-color: $color-secondary;
+
+      @include tablet {
+        top: 16px;
+        left: -49px;
+
+        width: 33px;
+      }
     }
   }
 }
