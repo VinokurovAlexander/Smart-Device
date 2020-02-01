@@ -10,6 +10,10 @@
   &__text {
     margin: 0;
 
+    @include mobile {
+      @include visually-hidden;
+    }
+
     &--title {
       font-family: $font-main;
       font-size: 25px;

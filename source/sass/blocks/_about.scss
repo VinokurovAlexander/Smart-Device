@@ -5,6 +5,10 @@
     padding-top: 52px;
   }
 
+  @include mobile {
+    padding-top: 57px;
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
@@ -22,6 +26,14 @@
 
     @include tablet {
       font-size: 32px;
+      line-height: 45px;
+    }
+
+    @include mobile {
+      margin-bottom: 24px;
+
+      font-size: 28px;
+      line-height: 39px;
     }
   }
 
@@ -63,10 +75,11 @@
 
     @include tablet {
       width: 74%;
+      font-size: 178px;
     }
 
-    @include tablet {
-      font-size: 178px;
+    @include mobile {
+      width: 100%;
     }
   }
 
@@ -77,6 +90,10 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    @include mobile {
+      margin-bottom: 39px;
+    }
   }
 
   &__text-wrapper {
@@ -85,6 +102,11 @@
     @include tablet {
       height: 200px;
       overflow: hidden;
+    }
+
+    @include mobile {
+      height: 329px;
+      margin-bottom: 48px;
     }
   }
 }

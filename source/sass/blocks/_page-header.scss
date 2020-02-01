@@ -14,6 +14,11 @@
     padding-top: 20px;
   }
 
+  @include mobile {
+    min-height: 636px;
+    padding-top: 11px;
+  }
+
   //&__container {
   //  max-width: 1420px;
   //  margin: 0 auto;
@@ -64,6 +69,10 @@
     @include tablet {
       padding-top: 116px;
     }
+
+    @include mobile {
+      padding-top: 223px;
+    }
   }
 
   &__content-wrapper {
@@ -77,6 +86,11 @@
       width: 60%;
       margin-left: 64px;
     }
+
+    @include mobile {
+      width: 100%;
+      margin-left: 0;
+    }
   }
 
   &__text-wrapper {
@@ -84,6 +98,10 @@
 
     @include tablet {
       padding-left: 52px;
+    }
+
+    @include mobile {
+      padding-left: 0;
     }
   }
 
@@ -131,6 +149,14 @@
       line-height: 28px;
     }
 
+    @include mobile {
+      padding-left: 52px;
+      margin-bottom: 40px;
+
+      font-size: 16px;
+      line-height: 25px;
+    }
+
     &::before {
       content: '';
       position: absolute;
@@ -147,6 +173,10 @@
         left: -49px;
 
         width: 33px;
+      }
+
+      @include mobile {
+        left: 4px;
       }
     }
   }
