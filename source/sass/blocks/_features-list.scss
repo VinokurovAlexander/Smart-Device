@@ -17,9 +17,10 @@
 
     box-shadow: -3px 0 0 0 $color-main;
     border: 1px solid #E5E5E5;
+
     transition:
-      background-color $transition-time $transition-function,
-      border-color $transition-time $transition-function;
+      box-shadow $transition-time $transition-time,
+      background-color $transition-time $transition-function;
 
     &:nth-last-child(-n+2) {
       @media (min-width: $width-tablet) {
@@ -73,14 +74,14 @@
   }
 
   &__text {
+    @include transition(color);
+
     margin: 0;
 
     font-family: $font-attention;
     font-size: 16px;
     line-height: 22px;
     color: $color-text-content;
-
-    transition: color $transition-time $transition-function;
 
     &--title {
       margin-bottom: 15px;
@@ -108,8 +109,8 @@
     margin-bottom: 15px;
 
     path {
+      @include transition(fill);
       fill: $color-main;
-      transition: fill $transition-time $transition-function;
     }
 
     @include tablet {

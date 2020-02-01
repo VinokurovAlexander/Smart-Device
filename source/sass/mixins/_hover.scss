@@ -1,0 +1,8 @@
+@mixin hover {
+  @include transition(opacity);
+
+  &:hover {
+    cursor: pointer;
+    opacity: $opacity-hover;
+  }
+}

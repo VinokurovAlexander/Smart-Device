@@ -1,0 +1,96 @@
+.form {
+  form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  input {
+    margin-bottom: 40px;
+  }
+
+  input,
+  button {
+    width: 48%;
+  }
+
+  textarea {
+    width: 100%;
+    height: 154px;
+    margin-bottom: 46px;
+    resize: none;
+  }
+
+  textarea,
+  input {
+    @include main-text--secondary;
+    @include transition(box-shadow);
+
+    box-sizing: border-box;
+    padding: 14px 17px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    border:none;
+
+    &::placeholder {
+      color: $color-text-attention;
+    }
+
+    &:hover {
+      box-shadow: 0 0 6px 0 $color-secondary;
+    }
+
+    &:focus {
+      box-shadow: 0 0 14px 2px $color-secondary;
+    }
+  }
+
+  label:not(.visually-hidden) {
+    @include main-text--secondary;
+    @include main-text--small;
+    @include hover;
+
+    position: relative;
+
+    box-sizing: border-box;
+    width: 45%;
+    padding-left: 31px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      width: 16px;
+      height: 16px;
+
+      outline: 1px solid $color-secondary;
+    }
+
+    &::after {
+      @include transition(opacity);
+
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: 4px;
+
+      width: 9px;
+      height: 5px;
+
+      background: url('../img/icon-ok.svg');
+      background-position: center;
+
+      opacity: 0;
+    }
+  }
+
+  input:checked + label {
+    &::after {
+      opacity: 1;
+    }
+  }
+}

@@ -143,7 +143,7 @@
       <div class="about__container container">
         <p class="about__year mobile-not">2005</p>
         <div class="about__content">
-          <h2 class="about__title">О компании</h2>
+          <h2 class="about__title title-second title-second--secondary">О компании</h2>
           <div class="about__text-wrapper">
             <p class="about__text text-main">
               Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года.
@@ -157,6 +157,62 @@
             </p>
           </div>
           <a class="about__link link btn btn--main" href="#">Подробнее</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-main__item services">
+      <div class="services__container container">
+        <h2 class="services__title title-second">Service Device предлагает следующие товары и услуги</h2>
+        <ul class="services__list services-list list">
+          <li class="services-list__item services-list__item--production">
+            <a class="services-list__link" href="#">
+              <div class="services-list__content">
+                <h3 class="services-list__title">Производство печатных плат</h3>
+<!--                <img width="370" height="620" src="img/services-production-desktop@1x.jpg">-->
+              </div>
+            </a>
+          </li>
+          <li class="services-list__item">
+            <a class="services-list__link" href="#">
+              <div class="services-list__content">
+                <h3 class="services-list__title">Монтаж печатных плат</h3>
+<!--                <img width="370" height="620" src="img/services-montage-desktop@1x.jpg">-->
+              </div>
+            </a>
+          </li>
+          <li class="services-list__item">
+            <a class="services-list__link" href="#">
+              <div class="services-list__content">
+                <h3 class="services-list__title">Комплектующие для светотехники</h3>
+<!--                <img width="370" height="620" src="img/services-lights-desktop@1x.jpg">-->
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="page-main__item feedback">
+      <div class="feedback__container container">
+        <div class="feedback__content">
+          <h2 class="feedback__title title-second">
+            Остались вопросы? Задайти их нам!
+          </h2>
+          <p class="feedback__text text-main text-main--secondary">Мы проконсультируем Вас бесплатно</p>
+          <div class="feedback__form form">
+            <form>
+              <label class="visually-hidden" for="user-name">Поле ввода имени</label>
+              <input type="text" name="user-name" id="user-name" placeholder="Имя" required>
+              <label class="visually-hidden" for="phone-number">Поле ввода телефона</label>
+              <input type="text" name="phone-number" id="phone-number" placeholder="Телефон" required>
+              <label class="visually-hidden" for="feedback-text">Поля для ввода вопроса</label>
+              <textarea required name="feedback-text" id="feedback-text" placeholder="Ваш вопрос"></textarea>
+              <button type="submit" class="form__btn btn">Задать вопрос</button>
+              <input type="checkbox" class="visually-hidden" name="personal-data" id="personal-data" required checked>
+              <label for="personal-data">Я согласен на обработку персональных данных</label>
+            </form>
+          </div>
         </div>
       </div>
     </section>

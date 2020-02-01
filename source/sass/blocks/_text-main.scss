@@ -1,6 +1,7 @@
 .text-main {
-  font-family: $font-attention;
-  font-size: 16px;
-  line-height: 22px;
-  color: $color-text-content;
+  @include main-text;
+
+  &--secondary {
+    @include main-text--secondary;
+  }
 }
