@@ -16,7 +16,7 @@
     margin-bottom: 29px;
 
     box-shadow: -3px 0 0 0 $color-main;
-    border: 1px solid #E5E5E5;
+    border: 1px solid $color-border;
 
     transition:
       box-shadow $transition-time $transition-time,

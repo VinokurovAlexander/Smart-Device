@@ -4,16 +4,8 @@
   flex-wrap: wrap;
 
   &__text {
-    @include text-secondary;
-
     margin: 0;
-    margin-right: 73px;
-
-    font-size: 13px;
-    line-height: 24px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-
+    margin-right: 5%;
 
     &--copyright {
       margin-left: auto;
@@ -21,7 +13,11 @@
     }
 
     &--about {
-      margin-right: 142px;
+      margin-right: 10%;
+
+      @include desktop {
+        margin-right: 7%;
+      }
     }
   }
 }

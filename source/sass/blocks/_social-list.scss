@@ -1,8 +1,21 @@
 .social-list {
   padding: 0 10px;
 
+  @include tablet {
+    justify-content: flex-end;
+
+    width: 21%;
+    padding: 0;
+    padding-top: 10px;
+  }
+
   &__item {
     margin-right: 15px;
     margin-bottom: 10px;
+
+    @include tablet {
+      margin-right: 0;
+      margin-left: 14px;
+    }
   }
 }

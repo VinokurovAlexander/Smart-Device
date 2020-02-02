@@ -4,4 +4,12 @@
 
   height: 100px;
   padding-left: 7px;
+
+  @include desktop {
+    height: auto;
+  }
+
+  @include tablet {
+    padding-left: 0;
+  }
 }

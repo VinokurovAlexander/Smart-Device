@@ -14,6 +14,10 @@
     text-transform: uppercase;
 
     color: $color-text-dark;
+
+    @include tablet {
+      padding-left: 0;
+    }
   }
 
   &__text {
@@ -30,7 +34,7 @@
     width: 100%;
 
     &--main {
-      position: relative;
+      @include outline-bottom;
 
       display: flex;
       justify-content: space-between;
@@ -40,25 +44,22 @@
       padding-top: 64px;
       padding-bottom: 52px;
 
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
+      @include tablet {
+        padding: 0;
 
-        display: block;
-
-        width: 100vw;
-        height: 1px;
-
-        background-color: #E5E5E5;
+        &::after {
+          display: none;
+        }
       }
     }
 
     &--secondary {
       padding: 14px 0;
       padding-left: 11px;
+
+      @include tablet {
+        padding: 20px 0;
+      }
     }
   }
 
@@ -68,13 +69,41 @@
       justify-content: space-between;
 
       width: 70%;
+
+      @include tablet {
+        @include outline-bottom;
+
+        padding-top: 38px;
+        padding-bottom: 36px;
+      }
     }
 
     &--links {
       width: 20%;
+
+      @include desktop {
+        width: 26%;
+      }
+
+      @include tablet {
+        @include outline-bottom;
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+
+        //width: 100%;
+        padding-top: 19px;
+        padding-bottom: 26px;
+      }
     }
 
     &--info {
+      width: 100%;
+    }
+
+    @include tablet {
       width: 100%;
     }
   }
@@ -85,11 +114,26 @@
 
   &__logo-link {
     margin-bottom: 55px;
+
+    @include tablet {
+      width: 38%;
+      margin-bottom: 0;
+    }
   }
 
   &__item {
     &--site-section {
       width: 51%;
+
+      @include tablet {
+        width: 52%;
+      }
+    }
+
+    &--contacts {
+      @include tablet {
+        flex-grow: 1;
+      }
     }
   }
 }

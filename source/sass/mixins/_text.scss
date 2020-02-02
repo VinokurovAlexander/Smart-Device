@@ -24,3 +24,12 @@
   color: $color-text-main;
   opacity: 0.5;
 }
+
+@mixin text-secondary--alternate {
+  @include text-secondary;
+
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}

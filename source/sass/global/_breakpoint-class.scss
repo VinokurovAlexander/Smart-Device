@@ -11,3 +11,17 @@
     display: inline;
   }
 }
+
+.tablet-not {
+  @include tablet {
+    display: none;
+  }
+}
+
+.tablet-begin {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+}
