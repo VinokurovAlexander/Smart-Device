@@ -1,7 +1,7 @@
 .text-main {
-  @include main-text;
+  @include text-main;
 
   &--secondary {
-    @include main-text--secondary;
+    @include text-main--secondary;
   }
 }

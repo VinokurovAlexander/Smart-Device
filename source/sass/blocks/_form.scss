@@ -52,7 +52,7 @@
 
   textarea,
   input {
-    @include main-text--secondary;
+    @include text-main--secondary;
     @include transition(box-shadow);
 
     box-sizing: border-box;
@@ -75,8 +75,8 @@
   }
 
   label:not(.visually-hidden) {
-    @include main-text--secondary;
-    @include main-text--small;
+    @include text-main--secondary;
+    @include text-main--small;
     @include hover;
 
     position: relative;

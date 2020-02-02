@@ -1,0 +1,26 @@
+@mixin text-main {
+  font-family: $font-attention;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@mixin text-main--secondary {
+  @include text-main;
+  color: $color-text-attention;
+}
+
+@mixin text-main--small {
+  @include text-main;
+
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@mixin text-secondary {
+  font-family: $font-attention;
+  font-size: 15px;
+  line-height: 25px;
+
+  color: $color-text-main;
+  opacity: 0.5;
+}

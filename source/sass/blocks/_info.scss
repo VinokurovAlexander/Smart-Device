@@ -1,0 +1,27 @@
+.info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__text {
+    @include text-secondary;
+
+    margin: 0;
+    margin-right: 73px;
+
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+
+    &--copyright {
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    &--about {
+      margin-right: 142px;
+    }
+  }
+}

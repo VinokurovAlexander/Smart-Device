@@ -1,7 +1,4 @@
 .page-footer {
-  padding-top: 64px;
-  min-height: 500px;
-
   background-color: $color-bg-secondary;
   color: $color-text-main;
 
@@ -20,17 +17,49 @@
   }
 
   &__text {
-    font-family: $font-attention;
-    font-size: 15px;
-    line-height: 25px;
-
-    color: $color-text-main;
-    opacity: 0.5;
+    @include text-secondary;
+    margin: 0;
   }
 
   &__container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__content-wrapper {
+    width: 100%;
+
+    &--main {
+      position: relative;
+
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: flex-start;
+
+      padding-top: 64px;
+      padding-bottom: 52px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        display: block;
+
+        width: 100vw;
+        height: 1px;
+
+        background-color: #E5E5E5;
+      }
+    }
+
+    &--secondary {
+      padding: 14px 0;
+      padding-left: 11px;
+    }
   }
 
   &__content {
@@ -43,6 +72,10 @@
 
     &--links {
       width: 20%;
+    }
+
+    &--info {
+      width: 100%;
     }
   }
 
