@@ -8,12 +8,21 @@
     padding-top: 51px;
   }
 
+  @include mobile {
+    padding-bottom: 63px;
+  }
+
   &__title {
     margin: 0;
 
     @include tablet {
       padding-right: 15%;
       margin-bottom: 50px;
+    }
+
+    @include mobile {
+      padding-right: 0;
+      margin-bottom: 42px;
     }
   }
 }
