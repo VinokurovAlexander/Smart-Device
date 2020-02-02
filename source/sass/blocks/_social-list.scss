@@ -1,12 +1,10 @@
 .social-list {
-  padding: 0 10px;
-
   @include tablet {
     justify-content: flex-end;
+  }
 
-    width: 21%;
-    padding: 0;
-    padding-top: 10px;
+  @include mobile {
+    justify-content: center;
   }
 
   &__item {
@@ -16,6 +14,10 @@
     @include tablet {
       margin-right: 0;
       margin-left: 14px;
+    }
+
+    @include mobile {
+      margin: 0 8px 5px;
     }
   }
 }

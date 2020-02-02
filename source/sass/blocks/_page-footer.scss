@@ -18,6 +18,10 @@
     @include tablet {
       padding-left: 0;
     }
+
+    @include mobile {
+      margin-bottom: 0;
+    }
   }
 
   &__text {
@@ -60,6 +64,10 @@
       @include tablet {
         padding: 20px 0;
       }
+
+      @include mobile {
+        padding: 25px 0;
+      }
     }
   }
 
@@ -75,6 +83,15 @@
 
         padding-top: 38px;
         padding-bottom: 36px;
+      }
+
+      @include mobile {
+        flex-direction: column;
+
+        padding: 0;
+        &::after {
+          display: none;
+        }
       }
     }
 
@@ -93,10 +110,17 @@
         flex-wrap: wrap;
         align-items: center;
 
-        //width: 100%;
         padding-top: 19px;
         padding-bottom: 26px;
       }
+
+      @include mobile {
+        flex-direction: column;
+
+        padding-top: 44px;
+        padding-bottom: 45px;
+      }
+
     }
 
     &--info {
@@ -110,6 +134,10 @@
 
   &__address {
     margin: 0;
+
+    @include mobile {
+      padding-right: 5px;
+    }
   }
 
   &__logo-link {
@@ -118,6 +146,11 @@
     @include tablet {
       width: 38%;
       margin-bottom: 0;
+    }
+
+    @include mobile {
+      width: 75%;
+      margin-bottom: 28px;
     }
   }
 
@@ -134,6 +167,14 @@
       @include tablet {
         flex-grow: 1;
       }
+    }
+
+    @include mobile {
+      @include outline-bottom;
+
+      box-sizing: border-box;
+      width: 100%;
+      padding: 29px 0;
     }
   }
 }

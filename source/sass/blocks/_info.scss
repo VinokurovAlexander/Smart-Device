@@ -3,9 +3,27 @@
   align-items: center;
   flex-wrap: wrap;
 
+  @include mobile {
+    flex-direction: column;
+  }
+
   &__text {
+    @include text-secondary--alternate;
+
     margin: 0;
     margin-right: 5%;
+
+    @include mobile {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 21px;
+
+      text-align: center;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
 
     &--copyright {
       margin-left: auto;

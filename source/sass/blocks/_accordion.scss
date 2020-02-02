@@ -1,0 +1,25 @@
+.accordion {
+  @include mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    @include mobile {
+      display: none;
+
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+
+  &--open {
+    .accordion__btn {
+      &::after {
+        transform: translateY(-50%) rotate(0deg);
+      }
+    }
+  }
+}

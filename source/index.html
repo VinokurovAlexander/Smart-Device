@@ -20,9 +20,9 @@
           <svg class="logo-link__img" width="52" height="52">
             <use xlink:href="#icon-smart-device"></use>
           </svg>
-          <div class="logo-link__text-wrapper">
+          <div class="logo-link__text-wrapper mobile-not">
             <p class="logo-link__text logo-link__text--title">Smart Device</p>
-            <p class="logo-link__text logo-link__text--content">Умные технологии</p>
+            <p class="logo-link__text logo-link__text--content">умные технологии</p>
           </div>
         </a>
         <ul class="main-nav__list menu-list">
@@ -222,20 +222,20 @@
   <footer class="page-footer">
     <div class="page-footer__container container container--big">
       <div class="page-footer__content-wrapper page-footer__content-wrapper--main">
-        <section class="page-footer__content page-footer__content--links">
+        <section class="page-footer__content page-footer__content--links info-links">
           <a class="page-footer__logo-link logo-link logo-link--secondary link">
-            <svg class="logo-link__img" width="52" height="52">
+            <svg class="logo-link__img logo-link__img--big" width="52" height="52">
               <use xlink:href="#icon-smart-device"></use>
             </svg>
             <div class="logo-link__text-wrapper">
               <p class="logo-link__text logo-link__text--title logo-link__text logo-link__text--secondary">
                 Service Device
               </p>
-              <p class="logo-link__text logo-link__text--content">Умные технологии</p>
+              <p class="logo-link__text logo-link__text--content">умные технологии</p>
             </div>
           </a>
-          <p class="page-footer__text tablet-begin info-text">1999-2018 SD Service Devices</p>
-          <ul class="page-footer__list social-list list">
+          <p class="page-footer__text tablet-begin info-links__text">1999-2018 SD Service Devices</p>
+          <ul class="info-links__list social-list list">
             <li class="social-list__item">
               <a class="social-list__link link" href="#">
                 <svg class="social-list__icon" width="27" height="27">
@@ -263,11 +263,14 @@
           </ul>
         </section>
         <section class="page-footer__content page-footer__content--navigation">
-          <section class="page-footer__item page-footer__item--site-section">
+          <section class="page-footer__item page-footer__item--site-section accordion">
             <h3 class="page-footer__title">
               Разделы сайта
             </h3>
-            <ul class="page-footer__list site-section list">
+            <button class="accordion__btn mobile-only btn-toggle">
+              <span class="visually-hidden">Кнопка открытия/скрытия блока с информацией</span>
+            </button>
+            <ul class="page-footer__list site-section list accordion__item">
               <li class="site-section__item">
                 <a class="page-footer__text site-section__link link link--secondary" href="#">
                   О компании
@@ -305,43 +308,48 @@
               </li>
             </ul>
           </section>
-          <section class="page-footer__item page-footer__item--contacts">
+          <section class="page-footer__item page-footer__item--contacts accordion">
             <h3 class="page-footer__title">Наш офис</h3>
-            <p class="page-footer__address page-footer__text">
-              г. Мытищи, Олимпийский проспект, д.10
-            </p>
-            <ul class="page-footer__list phones-list list">
-              <li class="phones-list__item">
-                <a class="page-footer__text phones-list__link link link--secondary" href="tel:+74955894050">
-                  +7 (495) 589-40-50
-                </a>
-              </li>
-              <li class="phones-list__item">
-                <a class="page-footer__text phones-list__link link link--secondary" href="tel:+79250038767">
-                  +7 (925) 003-87-67
-                </a>
-              </li>
-              <li class="phones-list__item">
-                <a class="page-footer__text phones-list__link link link--secondary" href="tel:+792692608079">
-                  +7 (926) 926-080-79
-                </a>
-              </li>
-            </ul>
+            <button class="accordion__btn mobile-only btn-toggle">
+              <span class="visually-hidden">Кнопка открытия/скрытия блока с информацией</span>
+            </button>
+            <div class="accordion__item">
+              <p class="page-footer__address page-footer__text">
+                г. Мытищи, Олимпийский проспект, д.10
+              </p>
+              <ul class="page-footer__list phones-list list">
+                <li class="phones-list__item">
+                  <a class="page-footer__text phones-list__link link link--secondary" href="tel:+74955894050">
+                    +7 (495) 589-40-50
+                  </a>
+                </li>
+                <li class="phones-list__item">
+                  <a class="page-footer__text phones-list__link link link--secondary" href="tel:+79250038767">
+                    +7 (925) 003-87-67
+                  </a>
+                </li>
+                <li class="phones-list__item">
+                  <a class="page-footer__text phones-list__link link link--secondary" href="tel:+792692608079">
+                    +7 (926) 926-080-79
+                  </a>
+                </li>
+              </ul>
+            </div>
           </section>
         </section>
       </div>
       <div class="page-footer__content-wrapper page-footer__content-wrapper--secondary">
         <section class="page-footer__content page-footer__content--info info">
-          <p class="info__text info__text--defence info-text tablet-not">
+          <p class="info__text info__text--defence tablet-not">
             Все права защищены
           </p>
-          <p class="info__text info__text--about tablet-not info-text">
+          <p class="info__text info__text--about tablet-not">
             1999-2018 SD Service Devices
           </p>
-          <a class="info__text info__text--privacy link link--secondary info-text" href="#">
+          <a class="info__text info__text--privacy link link--secondary" href="#">
             Условия конфиденциальности
           </a>
-          <a class="info__text info__text--copyright link link--secondary info-text" href="#">
+          <a class="info__text info__text--copyright link link--secondary" href="#">
             Developed by wow studio
           </a>
         </section>
@@ -349,5 +357,7 @@
     </div>
   </footer>
 
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

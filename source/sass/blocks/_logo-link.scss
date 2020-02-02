@@ -11,6 +11,10 @@
   &--secondary {
     .logo-link__text-wrapper {
       width: 75%;
+
+      @include mobile {
+        width: 69%;
+      }
     }
   }
 
@@ -22,16 +26,16 @@
   &__text {
     margin: 0;
 
-    @include mobile {
-      @include visually-hidden;
-    }
-
     &--title {
       font-family: $font-main;
       font-size: 25px;
       font-weight: bold;
 
       color: $color-text-attention;
+
+      @include mobile {
+        margin-bottom: 3px;
+      }
     }
 
     &--content {
@@ -44,6 +48,20 @@
 
     &--secondary {
       color: $color-text-dark;
+    }
+  }
+
+  &__img {
+    @include mobile {
+      width: 38px;
+      height: 38px;
+    }
+
+    &--big {
+      @include mobile {
+        width: 52px;
+        height: 52px;
+      }
     }
   }
 }
