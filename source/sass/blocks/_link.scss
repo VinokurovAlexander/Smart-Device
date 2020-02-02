@@ -1,12 +1,19 @@
 .link {
+  @include transition(opacity);
+
   color: $color-text-attention;
   text-decoration: none;
 
-  transition: opacity $transition-time $transition-function;
 
   &:hover {
     opacity: $opacity-hover;
     cursor: pointer;
+  }
+
+  &--secondary {
+    &:hover {
+      opacity: 1;
+    }
   }
 
 }

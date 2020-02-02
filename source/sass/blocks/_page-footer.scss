@@ -1,0 +1,62 @@
+.page-footer {
+  padding-top: 64px;
+  min-height: 500px;
+
+  background-color: $color-bg-secondary;
+  color: $color-text-main;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 26px;
+    padding-left: 9px;
+
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: $color-text-dark;
+  }
+
+  &__text {
+    font-family: $font-attention;
+    font-size: 15px;
+    line-height: 25px;
+
+    color: $color-text-main;
+    opacity: 0.5;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    &--navigation {
+      display: flex;
+      justify-content: space-between;
+
+      width: 70%;
+    }
+
+    &--links {
+      width: 20%;
+    }
+  }
+
+  &__address {
+    margin: 0;
+  }
+
+  &__logo-link {
+    margin-bottom: 55px;
+  }
+
+  &__item {
+    &--site-section {
+      width: 51%;
+    }
+  }
+}

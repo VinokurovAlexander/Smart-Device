@@ -2,6 +2,18 @@
   display: flex;
   justify-content: space-between;
 
+  padding-left: 11px;
+
+  @include tablet {
+    padding-left: 0;
+  }
+
+  &--secondary {
+    .logo-link__text-wrapper {
+      width: 75%;
+    }
+  }
+
   &__text-wrapper {
     width: 67%;
     padding-top: 5px;
@@ -28,6 +40,10 @@
       font-weight: 500;
 
       color: $color-text-secondary;
+    }
+
+    &--secondary {
+      color: $color-text-dark;
     }
   }
 }
