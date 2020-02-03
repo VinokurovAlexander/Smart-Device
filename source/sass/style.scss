@@ -1,8 +1,12 @@
+@import '../css/libs/magnific-popup';
+
 @import 'global/_fonts';
 @import 'global/_var';
 @import 'mixins/_mixins';
 @import 'global/_global';
 @import 'global/_breakpoint-class';
+
+@import 'libs/_magnific-popup';
 
 @import 'blocks/_title-second';
 @import 'blocks/_link';

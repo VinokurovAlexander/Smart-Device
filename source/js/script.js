@@ -6,3 +6,9 @@ $('.accordion__btn').on('click', function() {
   parent.toggleClass('accordion--open');
   parent.find('.accordion__item').slideToggle();
 });
+
+//popup
+$('a[href="#callback-modal"]').magnificPopup({
+  type: 'inline',
+  midClick: true
+});

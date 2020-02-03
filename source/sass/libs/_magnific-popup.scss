@@ -1,0 +1,22 @@
+.mfp-inline-holder .mfp-content {
+  width: auto;
+}
+
+.mfp-close {
+  @include btn-close;
+  @include hover;
+
+  position: absolute;
+  top: 17px;
+  right: 18px;
+
+  width: 22px;
+  height: 22px;
+
+  background-color: $color-secondary;
+  opacity: 1;
+
+  &:active {
+    top: 17px;
+  }
+}
