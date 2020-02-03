@@ -23,16 +23,26 @@ phonesInput.inputmask({
 });
 
 //document scroll
-const documentScroll = function (element) {
-  $([document.documentElement, document.body]).animate({
-    scrollTop: $(element).offset().top
-  }, 1500);
+const Scroll = {
+  SLOW: 700,
+  FAST: 1500
 };
 
-$('.feedback-scroll-btn').on('click', function(e) {
-  e.preventDefault();
-  documentScroll($('#feedback'));
-});
+const documentScroll = function (element, speed) {
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $(element).offset().top
+  }, speed);
+};
+
+const scrollTo = function (link, element, speed) {
+  link.on('click', function(e) {
+    e.preventDefault();
+    documentScroll(element, speed);
+  })
+};
+
+scrollTo($('.scroll-btn-feedback'), $('#feedback'), Scroll.FAST);
+scrollTo($('.scroll-btn-features'), $('#features'), Scroll.SLOW);
 
 
 
