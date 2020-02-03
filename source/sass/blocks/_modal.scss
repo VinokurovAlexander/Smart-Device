@@ -1,0 +1,39 @@
+.modal {
+  //position: fixed;
+  //top: 136px;
+  //left: 50%;
+  //transform: translateX(-50%);
+
+  box-sizing: border-box;
+  max-width: 490px;
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 38px;
+
+  background-color: $color-main;
+  color: $color-text-attention;
+
+  &__container {
+    max-width: 410px;
+    padding: 0 40px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 7px;
+
+    font-size: 28px;
+  }
+
+  &__text {
+    @include text-main;
+
+    margin: 0;
+    margin-bottom: 32px;
+    padding-right: 7px;
+  }
+
+  &__btn {
+    width: 100%;
+  }
+}

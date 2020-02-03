@@ -406,6 +406,28 @@
     </div>
   </footer>
 
+  <section class="modal">
+    <div class="modal__container container">
+      <h2 class="modal__title title-second">Закажите звонок</h2>
+      <p class="modal__text">
+        Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
+      </p>
+      <div class="modal__form form form--modal">
+        <form>
+          <label class="visually-hidden" for="callback-user-name">Поле ввода имени</label>
+          <input type="text" name="user-name" id="callback-user-name" placeholder="Имя" required="">
+          <label class="visually-hidden" for="callback-phone-number">Поле ввода телефона</label>
+          <input type="text" name="phone-number" id="callback-phone-number" placeholder="Телефон" required="">
+          <label class="visually-hidden" for="callback-feedback-text">Поля для ввода вопроса</label>
+          <textarea required="" name="feedback-text" id="callback-feedback-text" placeholder="Ваш вопрос"></textarea>
+          <button type="submit" class="form__btn btn">Отправить</button>
+          <input type="checkbox" class="visually-hidden" name="personal-data" id="callback-personal-data" required="" checked="">
+          <label for="callback-personal-data">Я согласен на обработку персональных данных</label>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/script.js"></script>
 </body>

@@ -124,4 +124,27 @@
       opacity: 1;
     }
   }
+
+  &--modal {
+    button,
+    label:not(.visually-hidden),
+    input:not(.visually-hidden){
+      max-width: none;
+      width: 100%;
+    }
+
+    input:not(.visually-hidden) {
+      margin-bottom: 31px;
+    }
+
+    textarea {
+      height: 105px;
+      margin-bottom: 32px;
+    }
+
+    label:not(.visually-hidden) {
+      padding-left: 47px;
+      padding-right: 2px;
+    }
+  }
 }
