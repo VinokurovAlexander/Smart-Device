@@ -22,6 +22,20 @@ phonesInput.inputmask({
   placeholder: ' '
 });
 
+//document scroll
+const documentScroll = function (element) {
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $(element).offset().top
+  }, 1500);
+};
+
+$('.feedback-scroll-btn').on('click', function(e) {
+  e.preventDefault();
+  documentScroll($('#feedback'));
+});
+
+
+
 
 
 
