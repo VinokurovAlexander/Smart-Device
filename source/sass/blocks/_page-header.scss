@@ -7,6 +7,10 @@
   background-image: url('../img/header-bg-mask-desktop@1x.png');
   background-position: center;
 
+  @include retina {
+    background-image: url('../img/header-bg-mask-desktop@2x.png');
+  }
+
   color: $color-text-attention;
   overflow: hidden;
 
