@@ -39,14 +39,13 @@
       cursor: pointer;
       border-color: $color-main;
 
-      .features-list__text {
+      .features-list__text,
+      .features-list__title {
         color: $color-text-attention;
       }
 
       .features-list__icon {
-        path {
-          fill: $color-secondary;
-        }
+        fill: $color-secondary;
       }
     }
 
@@ -82,36 +81,37 @@
     font-size: 16px;
     line-height: 22px;
     color: $color-text-content;
+  }
 
-    &--title {
-      margin-bottom: 15px;
+  &__title {
+    @include transition(color);
 
-      font-family: $font-main;
-      font-size: 24px;
-      line-height: 34px;
-      font-weight: 400;
-      color: $color-main;
+    margin: 0;
+    margin-bottom: 15px;
 
-      @include tablet {
-        margin-bottom: 8px;
-      }
+    font-family: $font-main;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 400;
+    color: $color-main;
 
-      @include mobile {
-        margin-bottom: 13px;
+    @include tablet {
+      margin-bottom: 8px;
+    }
 
-        font-size: 20px;
-        line-height: 28px;
-      }
+    @include mobile {
+      margin-bottom: 13px;
+
+      font-size: 20px;
+      line-height: 28px;
     }
   }
 
   &__icon {
-    margin-bottom: 15px;
+    @include transition(fill);
 
-    path {
-      @include transition(fill);
-      fill: $color-main;
-    }
+    margin-bottom: 15px;
+    fill: $color-main;
 
     @include tablet {
       margin-bottom: 4px;
