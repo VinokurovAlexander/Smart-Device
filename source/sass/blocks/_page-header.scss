@@ -1,6 +1,6 @@
 .page-header {
-  min-height: 845px;
   padding-top: 33px;
+  padding-bottom: 86px;
 
   background-color: $color-bg-main;
   background-repeat: no-repeat;
@@ -8,102 +8,215 @@
   background-position: center;
 
   color: $color-text-attention;
+  overflow: hidden;
+
+  @include desktop {
+    padding-bottom: 21px;
+  }
 
   @include tablet {
-    min-height: 666px;
     padding-top: 20px;
+    padding-bottom: 164px;
   }
 
   @include mobile {
-    min-height: 630px;
     padding-top: 17px;
+    padding-bottom: 70px;
   }
 
-  &__wrapper {
+  &__content-wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
-    margin-top: 176px;
+    padding-top: 173px;
 
     @include tablet {
-      margin-top: 0;
+      padding-top: 0;
     }
   }
 
-  &__material-wrapper {
-    width: 54%;
+  &__content {
+    position: relative;
+    z-index: 3;
+
+    width: 51%;
+    padding-top: 56px;
+    padding-left: 8px;
 
     @include tablet {
-      flex-grow: 1;
+      width: 60%;
+      padding-top: 114px;
+      padding-left: 63px;
+    }
+
+    @include mobile {
+      order: 2;
+
+      width: 100%;
+      padding: 0;
+      margin-top: -31px;
     }
   }
 
   &__img-wrapper {
-    width: 46%;
-    overflow: hidden;
+    position: relative;
+
+    width: 48%;
+
+    //background-repeat: no-repeat;
+    //background-image: url('../img/triangles-desktop@1x.png');
+    //background-position: top -12px left 55px;
 
     @include tablet {
-      width: 34%;
+      width: 31%;
+    }
+
+    @include mobile {
+      order: 1;
+      width: 100%;
     }
   }
 
-  &__content-wrapper {
+  &__bg {
     position: absolute;
-    left: 50%;
+    top: -11px;
+    left: 55px;
+    z-index: 2;
 
-    width: 1420px;
-    margin-left: -710px;
-
-    @include desktop {
-      width: 947px;
-      margin-left: -487px;
-    }
+    width: 642px;
+    height: 530px;
 
     @include tablet {
-      width: 718px;
-      margin-left: -359px;
+      top: -10px;
+      left: -75px;
+
+      height: 417px;
+      width: auto;
+    }
+
+    @include mobile {
+      top: -4px;
+      left: 140px;
+
+      height: 399px;
     }
   }
 
   &__img {
-    margin-left: 9px;
+    position: relative;
+    z-index: 3;
+
+    margin-left: 57px;
 
     @include tablet {
       width: 465px;
       height: 340px;
       margin-top: 41px;
-      margin-left: 0;
-    }
-  }
-
-  &__content {
-    width: 55%;
-    padding-top: 54px;
-    padding-left: 5px;
-
-    @include desktop {
-      width: 50%;
-      padding-top: 155px;
-    }
-
-    @include tablet {
-      width: 60%;
-      padding-top: 116px;
-      padding-left: 62px;
+      margin-left: -10px;
     }
 
     @include mobile {
-      width: 100%;
-      padding-top: 230px;
+      width: 300px;
+      height: 220px;
+      margin-top: 37px;
+      margin-left: 10px;
     }
   }
 
+  //&__wrapper {
+  //  position: absolute;
+  //  right: 50%;
+  //
+  //  width: 1420px;
+  //  margin-right: -710px;
+  //}
+  //&__wrapper {
+  //  display: flex;
+  //  justify-content: space-between;
+  //
+  //  margin-top: 176px;
+  //
+  //  @include tablet {
+  //    margin-top: 0;
+  //  }
+  //}
+
+  //&__material-wrapper {
+  //  width: 54%;
+  //
+  //  @include tablet {
+  //    flex-grow: 1;
+  //  }
+  //}
+
+  //&__img-wrapper {
+  //  width: 46%;
+  //  overflow: hidden;
+  //
+  //  @include tablet {
+  //    width: 34%;
+  //  }
+  //}
+
+  //&__content-wrapper {
+  //  position: absolute;
+  //  left: 50%;
+  //
+  //  width: 1420px;
+  //  margin-left: -710px;
+  //
+  //  @include desktop {
+  //    width: 947px;
+  //    margin-left: -487px;
+  //  }
+  //
+  //  @include tablet {
+  //    width: 718px;
+  //    margin-left: -359px;
+  //  }
+  //}
+
+  //&__img {
+  //  margin-left: 9px;
+  //
+  //  @include tablet {
+  //    width: 465px;
+  //    height: 340px;
+  //    margin-top: 41px;
+  //    margin-left: 0;
+  //  }
+  //}
+
+  //&__content {
+  //  width: 55%;
+  //  padding-top: 54px;
+  //  padding-left: 5px;
+  //
+  //  @include desktop {
+  //    width: 50%;
+  //    padding-top: 155px;
+  //  }
+  //
+  //  @include tablet {
+  //    width: 60%;
+  //    padding-top: 116px;
+  //    padding-left: 62px;
+  //  }
+  //
+  //  @include mobile {
+  //    width: 100%;
+  //    padding-top: 230px;
+  //  }
+  //}
+
   &__text-wrapper {
     margin-bottom: 93px;
-    padding-left: 101px;
+    padding-left: 98px;
 
     @include tablet {
       padding-left: 52px;
+      margin-bottom: 0;
     }
 
     @include mobile {
@@ -113,7 +226,7 @@
 
   &__title {
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
 
     font-size: 80px;
     font-weight: bold;
