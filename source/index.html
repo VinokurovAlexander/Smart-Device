@@ -55,9 +55,21 @@
 
         </section>
         <div class="page-header__img-wrapper">
-          <img class="page-header__img" src="img/boards-desktop@1x.png" width="705" height="515" alt="Изображение печатных плат">
-          <img class="page-header__bg" src="img/triangles-desktop@1x.png" width="642" height="530"
-               alt="Фоновое изображение с треугльниками">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/boards-mobile@1x.webp">
+            <source type="image/webp" srcset="img/boards-desktop@1x.webp 1x, img/boards-desktop@2x.webp 2x">
+
+            <source media="(max-width: 767px)" srcset="img/boards-mobile@1x.png 1x, img/boards-mobile@2x.png 2x">
+            <img class="page-header__img" src="img/boards-desktop@1x.png" width="705" height="515"
+                 alt="Изображение печатных плат" srcset="img/boards-desktop@2x.png 2x">
+          </picture>
+          <picture>
+            <source type="image/webp" srcset="img/triangles-desktop@1x.webp 1x, img/triangles-desktop@2x.webp 2x">
+            <img class="page-header__bg" src="img/triangles-desktop@1x.png" srcset="img/triangles-desktop@2x.png 2x"
+                 width="642" height="530"
+                 alt="Фоновое изображение с треугльниками">
+          </picture>
         </div>
       </div>
     </div>
