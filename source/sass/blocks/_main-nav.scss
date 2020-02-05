@@ -8,24 +8,8 @@
     padding-left: 3px;
   }
 
-  &__logo-link {
-    width: 14%;
-
-    @include desktop {
-      width: 21%;
-    }
-
-    @include tablet {
-      width: 29%;
-    }
-  }
-
   &__btn {
-    max-width: 200px;
-    margin-left: 52px;
-
-    @include tablet {
-      display: none;
-    }
+    width: 180px;
+    margin-left: 48px;
   }
 }

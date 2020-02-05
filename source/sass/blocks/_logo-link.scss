@@ -2,15 +2,18 @@
   display: flex;
   justify-content: space-between;
 
+  width: 210px;
   padding-left: 11px;
 
   @include tablet {
     padding-left: 0;
   }
 
-  &--secondary {
+  &--long {
+    width: 225px;
+
     .logo-link__text-wrapper {
-      width: 75%;
+      width: 70%;
 
       @include mobile {
         width: 69%;

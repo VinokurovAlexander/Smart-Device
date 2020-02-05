@@ -38,8 +38,6 @@
     width: 100%;
 
     &--main {
-      //@include outline-bottom;
-
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
@@ -144,12 +142,10 @@
     margin-bottom: 55px;
 
     @include tablet {
-      width: 38%;
       margin-bottom: 0;
     }
 
     @include mobile {
-      width: 75%;
       margin-bottom: 28px;
     }
   }
