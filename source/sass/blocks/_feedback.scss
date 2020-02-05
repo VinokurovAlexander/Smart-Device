@@ -5,6 +5,8 @@
   color: $color-text-attention;
   background-color: $color-main;
 
+  overflow: hidden;
+
   @include tablet {
     padding-top: 80px;
     padding-bottom: 106px;
@@ -13,6 +15,12 @@
   @include mobile {
     padding-top: 30px;
     padding-bottom: 42px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &__title {
@@ -31,7 +39,6 @@
   &__content {
     box-sizing: border-box;
     width: 49%;
-    margin-left: auto;
     padding-left: 11px;
 
     @include desktop {
@@ -60,5 +67,32 @@
     @include mobile {
       margin-bottom: 26px;
     }
+  }
+
+  &__img-wrapper {
+    position: relative;
+    width: 51%;
+
+    @include desktop {
+      width: 46%;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    z-index: $z-index-img;
+
+    top: 69px;
+    right: 100px;
+  }
+
+  &__bg {
+    position: absolute;
+    top: -24px;
+    right: 141px;
+    z-index: $z-index-triangle;
+
+    width: 642px;
+    height: 530px;
   }
 }

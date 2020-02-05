@@ -8,4 +8,10 @@
     @include mobile {
       padding-top: 37px;
     }
+
+    &__container {
+      @media (min-width: $width-desktop) {
+        padding-left: 16px;
+      }
+    }
   }
