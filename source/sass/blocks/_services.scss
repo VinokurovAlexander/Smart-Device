@@ -1,19 +1,28 @@
 .services {
   padding-top: 88px;
-  padding-bottom: 75px;
+  padding-bottom: 65px;
 
   background-color: $color-bg-main;
 
   @include tablet {
     padding-top: 51px;
+    padding-bottom: 76px;
   }
 
   @include mobile {
     padding-bottom: 63px;
   }
 
+  &__container {
+    @media (min-width: $width-desktop) {
+      max-width: 1200px;
+      padding-left: 45px;
+    }
+  }
+
   &__title {
     margin: 0;
+    padding-left: 1px;
 
     @include tablet {
       padding-right: 15%;
@@ -22,6 +31,7 @@
 
     @include mobile {
       padding-right: 0;
+      padding-left: 11px;
       margin-bottom: 42px;
     }
   }

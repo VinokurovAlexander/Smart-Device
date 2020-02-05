@@ -1,0 +1,14 @@
+.btn-arrow {
+  &::before {
+    content: '';
+    position: absolute;
+
+    width: 63px;
+    height: 63px;
+
+    background-color: $color-main;
+    background-image: url('../img/icon-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

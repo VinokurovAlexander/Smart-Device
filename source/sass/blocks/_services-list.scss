@@ -2,31 +2,27 @@
   display: flex;
   flex-wrap: wrap;
 
+  margin: 0 -10px;
+
   @include tablet {
     flex-direction: column;
     align-items: center;
+
+    margin: 0;
   }
 
   &__item {
-    width: 370px;
-    height: 620px;
-    //padding: 52px 23px;
-    padding: 52px 0;
-    margin-right: 30px;
+    padding: 52px 25px;
+    margin: 0 -11px 10px;
 
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 
-    outline: 1px solid $color-main;
-
-    @include desktop {
-      width: 304px;
-    }
-
     @include tablet {
       width: 100%;
       height: 256px;
+      margin: 0;
       margin-bottom: 46px;
       padding: 0;
 
@@ -36,7 +32,6 @@
     }
 
     @include mobile {
-      margin-right: 0;
       margin-bottom: 30px;
     }
 
@@ -56,59 +51,144 @@
         margin-right: 0;
       }
     }
-
-    //&--production {
-    //  background-image: url('../img/services-production-desktop@1x.jpg');
-    //
-    //  @include retina {
-    //    background-image: url('../img/services-production-desktop@2x.jpg');
-    //  }
-    //}
-
-    //&--montage {
-    //  background-image: url('../img/services-montage-desktop@1x.jpg');
-    //
-    //  @include retina {
-    //    background-image: url('../img/services-montage-desktop@2x.jpg');
-    //  }
-    //}
-
-    //&--lights {
-    //  background-image: url('../img/services-lights-desktop@1x.jpg');
-    //
-    //  @include retina {
-    //    background-image: url('../img/services-lights-desktop@2x.jpg');
-    //  }
-    //}
   }
 
   &__content {
     @include filter($color-bg-main);
 
-    //width: 370px;
-    //height: 620px;
+    box-sizing: border-box;
+    width: 370px;
+    height: 620px;
+    padding: 30px 45px;
 
-    background-image: url('../img/services-production-desktop@1x.jpg');
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+
+    &::before {
+      right: 0;
+      bottom: 0;
+      z-index: 4;
+    }
+
+    @include desktop {
+      width: 293px;
+      height: 489px;
+    }
+
+    @include tablet {
+      width: 100%;
+      height: 100%;
+      padding: 19px 45px;
+
+      background-size: cover;
+      background-image: url('../img/production-tablet@1x.png');
+    }
+
+    @include mobile {
+      padding: 19px 36px;
+    }
+
+    &--production {
+      background-image: url('../img/services-production-desktop@1x.jpg');
+
+      @include retina {
+        background-image: url('../img/services-production-desktop@2x.jpg');
+      }
+
+      @include tablet {
+        background-image: url('../img/services-production-tablet@1x.jpg');
+
+        @include retina {
+          background-image: url('../img/services-production-tablet@2x.jpg');
+        }
+      }
+
+      @include mobile {
+        background-image: url('../img/services-production-mobile@1x.jpg');
+
+        @include retina {
+          background-image: url('../img/services-production-mobile@2x.jpg');
+        }
+      }
+    }
+
+    &--montage {
+      background-image: url('../img/services-montage-desktop@1x.jpg');
+
+      @include retina {
+        background-image: url('../img/services-montage-desktop@2x.jpg');
+      }
+
+      @include tablet {
+        background-image: url('../img/services-montage-tablet@1x.jpg');
+
+        @include retina {
+          background-image: url('../img/services-montage-tablet@2x.jpg');
+        }
+      }
+
+      @include mobile {
+        background-image: url('../img/services-montage-mobile@1x.jpg');
+
+        @include retina {
+          background-image: url('../img/services-montage-mobile@2x.jpg');
+        }
+      }
+    }
+
+    &--lights {
+      background-image: url('../img/services-lights-desktop@1x.jpg');
+
+      @include retina {
+        background-image: url('../img/services-lights-desktop@2x.jpg');
+      }
+
+      @include tablet {
+        background-image: url('../img/services-lights-tablet@1x.jpg');
+
+        @include retina {
+          background-image: url('../img/services-lights-tablet@2x.jpg');
+        }
+      }
+
+      @include mobile {
+        background-image: url('../img/services-lights-mobile@1x.jpg');
+
+        @include retina {
+          background-image: url('../img/services-lights-mobile@2x.jpg');
+        }
+      }
+    }
   }
 
   &__link {
     display: block;
     color: $color-text-attention;
+
+    @include tablet {
+      height: 100%;
+    }
   }
 
   &__title {
-    position: absolute;
-    top: 52px;
-    left: 30px;
+    position: relative;
     z-index: $z-index-title;
 
-    width: 50%;
+    width: 60%;
 
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;
+
+    @include tablet {
+      width: 25%;
+    }
+
+    @include mobile {
+      width: 71%;
+      margin-top: 0;
+    }
   }
 }
