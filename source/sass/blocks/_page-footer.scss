@@ -30,8 +30,9 @@
   }
 
   &__wrapper {
-    &:first-child {
-      border-bottom: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
+    &:last-child {
+      border: 0;
     }
   }
 
