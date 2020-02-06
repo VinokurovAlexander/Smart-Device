@@ -31,8 +31,9 @@
 
   &__wrapper {
     border-bottom: 1px solid $color-border;
+
     &:last-child {
-      border: 0;
+      border-bottom: none;
     }
   }
 

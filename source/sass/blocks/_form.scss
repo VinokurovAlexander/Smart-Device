@@ -29,6 +29,7 @@
 
   button {
     @include mobile {
+      max-width: none;
       margin-bottom: 33px;
     }
   }
