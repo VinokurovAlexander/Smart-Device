@@ -1,0 +1,9 @@
+.page-main {
+  background-image: url('../img/triangles-many@1x.png');
+  background-repeat: no-repeat;
+  background-position: top -27px center;
+
+  @include tablet {
+    background: none;
+  }
+}
