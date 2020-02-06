@@ -131,7 +131,6 @@
 
   &--modal {
     button,
-    label:not(.visually-hidden),
     input:not(.visually-hidden){
       max-width: none;
       width: 100%;
@@ -151,6 +150,7 @@
     }
 
     label:not(.visually-hidden) {
+      width: auto;
       padding-left: 47px;
       padding-right: 2px;
     }
