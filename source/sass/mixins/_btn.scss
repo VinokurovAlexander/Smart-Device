@@ -1,3 +1,35 @@
+@mixin btn {
+  display: block;
+
+  box-sizing: border-box;
+  max-width: 400px;
+  padding: 12px 25px;
+
+  font-family: $font-main;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  background-color: transparent;
+  border: 1px solid $color-text-attention;
+  outline: none;
+  border-radius: 5px;
+  color: $color-text-attention;
+
+  transition: opacity $transition-time $transition-function;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+
+  &:focus {
+    @include box-shadow-focus;
+  }
+}
+
 @mixin btn-toggle {
   position: relative;
 
