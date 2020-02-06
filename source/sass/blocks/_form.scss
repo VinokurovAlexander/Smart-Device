@@ -147,6 +147,8 @@
     textarea {
       height: 105px;
       margin-bottom: 32px;
+
+      overflow: auto;
     }
 
     label:not(.visually-hidden) {
