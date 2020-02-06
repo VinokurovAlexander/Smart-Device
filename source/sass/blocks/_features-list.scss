@@ -23,12 +23,6 @@
       box-shadow $transition-time $transition-time,
       background-color $transition-time $transition-function;
 
-    &:nth-last-child(-n+2) {
-      @media (min-width: $width-tablet) {
-        margin-bottom: 0;
-      }
-    }
-
     &:last-child {
       @include mobile {
         margin-bottom: 0;
