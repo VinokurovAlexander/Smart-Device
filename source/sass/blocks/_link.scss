@@ -15,4 +15,7 @@
     }
   }
 
+  &:focus {
+    @include outline-focus;
+  }
 }

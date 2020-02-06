@@ -1,3 +1,7 @@
+@mixin outline-focus {
+  outline: 1px dashed $color-outline;
+}
+
 @mixin outline-bottom {
   position: relative;
 

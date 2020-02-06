@@ -26,6 +26,10 @@
   &::after {
     transform: translateY(-50%) rotate(90deg);
   }
+
+  &:focus {
+    @include outline-focus;
+  }
 }
 
 @mixin btn-close {

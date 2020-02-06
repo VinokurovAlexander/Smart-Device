@@ -14,6 +14,7 @@ $color-text-content: #666666;
 $color-text-secondary: #788891;
 $color-text-dark: #203C42;
 $color-border: #E5E5E5;
+$color-outline: black;
 
 //fonts
 $font-main: 'Roboto Condensed', 'Arial', sans-serif;
@@ -31,10 +32,10 @@ $transition-function: ease;
 
 //z-index
 $z-index-filter: 1;
-$z-index-img: 2;
-$z-index-link: 3;
-$z-index-title: 4;
-$z-index-triangle: 5;
-$z-index-arrow-btn: 6;
-$z-index-content: 7;
+$z-index-img-bg: 2;
+$z-index-img: 3;
+$z-index-link: 4;
+$z-index-title: 5;
+$z-index-arrow-btn: 7;
+$z-index-content: 8;
 

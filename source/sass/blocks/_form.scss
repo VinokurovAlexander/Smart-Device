@@ -60,17 +60,18 @@
 
     background-color: rgba(255, 255, 255, 0.1);
     border:none;
+    outline: none;
 
     &::placeholder {
       color: $color-text-attention;
     }
 
     &:hover {
-      box-shadow: 0 0 6px 0 $color-secondary;
+      @include box-shadow-hover;
     }
 
     &:focus {
-      box-shadow: 0 0 14px 2px $color-secondary;
+      @include box-shadow-focus;
     }
   }
 
@@ -110,7 +111,6 @@
 
       background: url('../img/icon-ok.svg');
       background-position: center;
-
       opacity: 0;
     }
 
@@ -119,10 +119,14 @@
     }
   }
 
-  input:checked + label {
+  input[type="checkbox"]:checked + label {
     &::after {
       opacity: 1;
     }
+  }
+
+  input[type="checkbox"]:focus + label {
+    @include outline-focus;
   }
 
   &--modal {

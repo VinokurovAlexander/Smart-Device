@@ -14,6 +14,7 @@
 
   background-color: transparent;
   border: 1px solid $color-text-attention;
+  outline: none;
   border-radius: 5px;
   color: $color-text-attention;
 
@@ -39,5 +40,9 @@
   &--main {
     color: $color-main;
     border-color: $color-main;
+  }
+
+  &:focus {
+    @include box-shadow-focus;
   }
 }
