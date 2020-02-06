@@ -26,4 +26,10 @@
       }
     }
   }
+
+  &__btn {
+    &:focus {
+      outline: none;
+    }
+  }
 }
