@@ -1,8 +1,9 @@
 .logo-link {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
-  width: 210px;
+  width: 201px;
   padding-left: 11px;
 
   @include tablet {
@@ -10,20 +11,7 @@
   }
 
   &--long {
-    width: 225px;
-
-    .logo-link__text-wrapper {
-      width: 70%;
-
-      @include mobile {
-        width: 69%;
-      }
-    }
-  }
-
-  &__text-wrapper {
-    width: 67%;
-    padding-top: 5px;
+    width: 216px;
   }
 
   &__title {
