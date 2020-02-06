@@ -1,6 +1,6 @@
 .services {
   padding-top: 88px;
-  padding-bottom: 65px;
+  padding-bottom: 127px;
 
   background-color: $color-bg-main;
 
@@ -15,17 +15,15 @@
 
   &__container {
     @media (min-width: $width-desktop) {
-      max-width: 1200px;
-      padding-left: 45px;
+      padding-left: 17px;
     }
   }
 
   &__title {
     margin: 0;
-    padding-left: 1px;
+    margin-bottom: 52px;
 
     @include tablet {
-      padding-right: 15%;
       margin-bottom: 50px;
     }
 
