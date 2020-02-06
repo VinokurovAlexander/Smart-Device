@@ -7,6 +7,10 @@
   }
 
   &__item {
+    @media (min-width: $width-tablet) {
+      display: block !important;
+    }
+
     @include mobile {
       display: none;
 
